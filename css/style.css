@@ -1,0 +1,79 @@
+/* REGOLE GENERALI */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 60%;
+    margin: 50px auto;
+    background-color: indianred;
+    padding-bottom: 50px;
+    border-radius: 10px;
+
+}
+h2{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.inner_container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+
+/* PRICE */
+#price .price_row{
+    display: flex;
+    justify-content: center;
+}
+#price .input_box{
+    width: calc(100% / 3);
+    text-align: center;
+}
+#price label{
+    display: block;
+    padding-bottom: 25px;
+    color: indianred;
+    font-weight: 700;
+}
+#price input:focus::placeholder{
+    color: transparent;
+}
+#price button{
+    margin: 50px 25px 0 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* TICKET */
+#ticket .inner_container{
+    padding: 25px;
+}
+#ticket table{
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 25px;
+}
+#ticket table tr{
+    height: 100px;
+}
+#ticket table th:first-child,
+#ticket table td:first-child{
+    background-color: lightcyan;
+}
+#ticket table td{
+    text-align: center;
+}
+#ticket table th:first-child{
+    text-transform: uppercase;
+}
+#ticket table td:first-child{
+    text-transform: uppercase;
+}

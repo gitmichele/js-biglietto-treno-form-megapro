@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <!-- CALCOLA IL PREZZO DEL BIGLIETTO -->
+        <section id="price">
+            <h2>Calcola il prezzo del tuo biglietto</h2>
+            <div class="inner_container">
+                <div class=price_row>
+                    <div class="input_box">
+                        <label for="name">Nome e Cognome</label>
+                        <input type="text" name="name" id="name" placeholder="Inserisci nome">
+                    </div>
+
+                    <div class="input_box">
+                        <label for="name">Km da percorrere</label>
+                        <input type="number" name="km" id="km" placeholder="Inserisci distanza">
+                    </div>
+                    
+                    <div class="input_box">
+                    <label for="age">Fascia d'età</label>
+                    <select name="age" id="age">
+                        <option value="normal" selected='selected'>Adulto</option>
+                        <option value="discount">Minorenne</option>
+                        <option value="discount">Over 65</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="price_row">
+                    <button id="calc">
+                        Genera
+                    </button>
+                    <button id="del">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- IL TUO BIGLIETTO -->
+        <section id="ticket">
+            <h2>Il tuo biglietto</h2>
+            <div class=inner_container>
+                <h3>Dettaglio passeggeri</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Nome passeggero
+                            </th>
+                            <th>
+                                Offerta
+                            </th>
+                            <th>
+                                Carrozza
+                            </th>   
+                            <th>
+                                Codice CP
+                            </th>
+                            <th>
+                                Costo biglietto
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="tktName"></td>
+                            <td id="tktDiscount"></td>
+                            <td id="tktCouch"></td>
+                            <td id="tktCode"></td>
+                            <td id="tktPrice"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
